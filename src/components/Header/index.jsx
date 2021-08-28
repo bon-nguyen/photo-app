@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Col, Container, Row } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import './Header.scss';
 
 
@@ -11,14 +11,12 @@ function Header(props) {
             <Container>
                 <Row className="justify-content-between">
                     <Col xs="auto">
-                    <a
+                    <Link
                         className="header__link header__title"
-                        href="https://youtube.com/easyfrontend"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        to='/'
                         >
-                        Easy Frontend
-                    </a>
+                        Learn Redux
+                    </Link>
                     </Col>
 
                     <Col xs="auto">
